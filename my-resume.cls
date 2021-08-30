@@ -12,7 +12,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{my-resume}[2020/11/17 my-resume v0.1, my own resume/CV class.]
+\ProvidesClass{my-resume}[2021/8/30 my-resume v0.2, resume/CV class.]
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -51,6 +51,8 @@
 \RequirePackage{xcolor}
 \RequirePackage{fontawesome}
 \RequirePackage{academicons}
+
+\graphicspath{ {img/} }
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -272,7 +274,7 @@
                 \vspace{0cm}
     			% format as square or round
     			\ifthenelse{\equal{\@photoformat}{square}}{%
-    			    \includegraphics[width=\linewidth]{\@photo}%
+    			    \includegraphics[width=\linewidth]{\img}%
     			}{%
     			    \tikz\path[fill overzoom image={\@photo}]circle[radius=0.5\linewidth];
     			}
@@ -295,6 +297,7 @@
 
 \newcommand{\infofield}[2]{\mbox{\makebox[5mm]{\textcolor{accent}{\normalsize #1}}\hspace{0.5em}#2}\vspace{0.2em}\newline}
 \newcommand{\email}[1]{\infofield{\faEnvelope}{\href{mailto:#1}{#1}}}
+\newcommand{\matrixorg}[1]{\infofield{\faComments}{#1}}
 \newcommand{\address}[1]{\infofield{\faAt}{#1}}
 \newcommand{\location}[1]{\infofield{\faMapMarker}{#1}}
 \newcommand{\phone}[1]{\infofield{\faPhone}{#1}}
