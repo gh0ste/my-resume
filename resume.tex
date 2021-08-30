@@ -1,0 +1,144 @@
+\documentclass[%singlesided,
+               doublesided,
+               paper=a4,
+               fontsize=10pt
+              ]{my-resume}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set geometry
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength\highlightwidth{8cm}
+\setlength\headerheight{4cm}            % note that margintop gets added to this value, i.e. the header bar is 5cm
+\setlength\marginleft{1cm}
+\setlength\marginright{\marginleft}      % needs to be 1.5 times to be actually equal. why?
+\setlength\margintop{1cm}
+\setlength\marginbottom{1cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FONTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{fontspec}
+\setmainfont{Carlito}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COLORS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\colorlet{highlightbarcolor}{lightgray}
+\colorlet{headerbarcolor}{darkgray}
+
+\colorlet{headerfontcolor}{white}
+\colorlet{accent}{awesome-red}
+\colorlet{heading}{black}
+\colorlet{emphasis}{black}
+\colorlet{body}{black}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\name{Agustín Damián Ulloa}
+\tagline{Amazing tag line that makes HR managers want to hire you immediately.\\The tag line is aligned with the bottom of the picture to the right, so if you have\\multiple lines it fills the space to your name from the bottom. You might want to\\introduce manual line breaks to make this look nicer then simply filling up the lines.}
+\photo[round]{picture.jpg}{\dimexpr \headerheight-\marginbottom}   % make photo exactly match the header with margintop/marginright/marginbottom as margin
+
+\makeheader
+
+\highlightbar{
+
+    \section{Contacto}
+    
+    \email{agustinulloa152@gmail.com}
+    \phone{+54 11 59907299}
+    \location{Ramallo 4445, 1430 CABA}
+    \vspace{0.5em}
+    \homepage{agustinulloa.xyz}{https://www.agustinulloa.xyz}
+    \github{@gh0ste}{https://github.com/gh0ste}
+    \linkedin{Agustín Ulloa}{https://www.linkedin.com/in/agustín-ulloa-a2569a21b}
+    \orcid{0000-0002-3033-6184}{https://www.orcid.org/0000-0002-3033-6184}
+    
+    \section{Habilidades}
+    
+    \skillsection{Programación}
+    \skill{Python}{1}
+    \skill{Bash}{2}
+    \skill{C}{1}
+    \skill{HTML/CSS}{3}
+    \skill{JavaScript}{1}
+    \skill{LaTeX}{2}
+    
+    \vspace{0.5em}
+    \skillsection{Sistemas Operativos}
+    \skill{Linux}{5}
+    \skill{MacOS}{1}
+    \skill{Windows}{5}
+    
+    \vspace{0.5em}
+    \skillsection{Software y Herramientas}
+    \skill{Docker}{1}
+    \skill{GIMP}{2}
+    \skill{Office}{4}
+    
+    \vspace{0.5em}
+    \skillsection{Lenguajes}
+    \skill{Español}{5}
+    \skill{Inglés}{4}
+    \bigskip
+    
+    \section{Página Web}
+%    \includegraphics{qr}
+
+}
+\mainbar{
+  
+%    \section{About this template}
+%    Section are set in bold face. An optional parameter of \texttt{\textbackslash section} takes a symbol to add in front of the text. This option is used in the jobs and education sections below.
+    
+    \section[\faGears]{Historial de trabajo}
+    Por ahora no trabajé en ningún lado, aunque tengo muchísimas ganas de incursionar en el mundo laboral. Quiero tener contacto con verdaderos 
+    profesionales, aprender nuevas cosas constantemente, mejorar y vivir la experiencia de trabajar en serio.
+    
+    \section[\faMortarBoard]{Educación}
+    \job{03/2016 - 8/2021}
+        {Escuela Técnica N°21 D.E. 10. "Fragata Escuela Libertad", Ciudad Autónoma de Buenos Aires}
+        {Técnico en Computación}
+        {Aún estoy cursando la secundaria, pero muy cerca de terminar el último año.}
+
+    \job{¿2022?}
+        {Universidad Buenos Aires (UBA), Ciudad Autónoma de Buenos Aires}
+        {Ingeniería en Informática}
+        {Tengo planeado comenzar con esta carrera una vez finalice la secundaria.}
+
+    \section{Aptitudes}
+    \smallskip
+    \tag{adaptabilidad}
+    \tag{ordenado}
+    \tag{prolijo}
+    \tag{}
+    \tag{}
+    \tag{}
+    
+    \section{Intereses}
+    \achievement{Música}
+    \achievement{}
+
+    \section{Gráfico horario}
+    \wheelchart{1.5cm}{0.5cm}{
+        8/8em/accent!20/Dormir,
+        8/8em/accent!40/Escuela,
+        4/8em/accent!80/Aprendiendo cosas nuevas,
+        2/8em/accent/Descansando y organizando cosas,
+        2/8em/accent!60/Ocio.
+    }
+}
+\makebody
+
+\end{document}
