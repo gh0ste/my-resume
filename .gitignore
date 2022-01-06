@@ -1,5 +1,7 @@
 
+texput.log
 resume.aux
 resume.log
 resume.out
-texput.log
+resume.fls
+resume.fdb_latexmk
