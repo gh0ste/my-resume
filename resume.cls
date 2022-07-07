@@ -104,6 +104,7 @@
 \definecolor{black}{HTML}{000000}
 \definecolor{darkgray}{HTML}{333333}
 \definecolor{mediumgray}{HTML}{444444}
+\definecolor{blueishgray}{HTML}{D3EDFD}
 \definecolor{gray}{HTML}{5D5D5D}
 % Basic colors
 \definecolor{green}{HTML}{C2E15F}
@@ -111,6 +112,7 @@
 \definecolor{purple}{HTML}{D3A4F9}
 \definecolor{red}{HTML}{FB4485}
 \definecolor{blue}{HTML}{6CE0F1}
+\definecolor{cynblue}{HTML}{538EAB}
 % Text colors
 \definecolor{darktext}{HTML}{414141}
 \colorlet{text}{darkgray}

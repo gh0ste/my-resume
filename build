@@ -1,0 +1,7 @@
+#!/bin/sh
+
+lualatex resume.tex
+rm resume.aux resume.log resume.outexput.log resume.out resume.fls resume.fdb_latexmk resume.synctex.gz
+rm fontawesomesymbols-xeluatex.fdb_latexmk fontawesomesymbols-xeluatex.log fontawesomesymbols-xeluatex.fls fontawesomesymbols-xeluatex.aux fontawesomesymbols-pdftex.fdb_latexmk fontawesomesymbols-pdftex.log fontawesomesymbols-pdftex.fls fontawesomesymbols-pdftex.aux fontawesomesymbols-generic.fdb_latexmk fontawesomesymbols-generic.log fontawesomesymbols-generic.fls fontawesomesymbols-generic.aux
+rm academicons.fdb_latexmk academicons.log academicons.glo academicons.out academicons.idx academicons.dvi academicons.aux academicons.fls academicons.hd 
+cp resume.pdf ../CVUlloa.pdf
